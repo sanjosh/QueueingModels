@@ -1,0 +1,44 @@
+name : LookupJob  should_be_class : 11  pop : 128.000000  think : 0.000000
+name : ScanJob  should_be_class : 11  pop : 4.000000  think : 0.000000
+name : BulkInsertJob  should_be_class : 11  pop : 8.000000  think : 0.000000
+name : CPU  device : 8  sched : 6
+name : SSD  device : 8  sched : 6
+nodename : CPU  workname : LookupJob  time : 0.005000
+nodename : CPU  workname : ScanJob  time : 0.400000
+nodename : CPU  workname : BulkInsertJob  time : 0.100000
+nodename : SSD  workname : LookupJob  time : 0.003000
+nodename : SSD  workname : ScanJob  time : 0.050000
+nodename : SSD  workname : BulkInsertJob  time : 0.010000
+name : LookupJob  should_be_class : 11  pop : 128.000000  think : 0.000000
+name : ScanJob  should_be_class : 11  pop : 4.000000  think : 0.000000
+name : BulkInsertJob  should_be_class : 11  pop : 8.000000  think : 0.000000
+name : CPU  device : 8  sched : 6
+name : SSD  device : 8  sched : 6
+nodename : CPU  workname : LookupJob  time : 0.005000
+nodename : CPU  workname : ScanJob  time : 0.400000
+nodename : CPU  workname : BulkInsertJob  time : 0.100000
+nodename : SSD  workname : LookupJob  time : 0.003000
+nodename : SSD  workname : ScanJob  time : 0.050000
+nodename : SSD  workname : BulkInsertJob  time : 0.010000
+name : LookupJob  should_be_class : 11  pop : 128.000000  think : 0.000000
+name : ScanJob  should_be_class : 11  pop : 4.000000  think : 0.000000
+name : BulkInsertJob  should_be_class : 11  pop : 8.000000  think : 0.000000
+name : CPU  device : 8  sched : 6
+name : SSD  device : 8  sched : 6
+nodename : CPU  workname : LookupJob  time : 0.005000
+nodename : CPU  workname : ScanJob  time : 0.400000
+nodename : CPU  workname : BulkInsertJob  time : 0.100000
+nodename : SSD  workname : LookupJob  time : 0.003000
+nodename : SSD  workname : ScanJob  time : 0.050000
+nodename : SSD  workname : BulkInsertJob  time : 0.010000
+name : LookupJob  should_be_class : 11  pop : 128.000000  think : 0.000000
+name : ScanJob  should_be_class : 11  pop : 4.000000  think : 0.000000
+name : BulkInsertJob  should_be_class : 11  pop : 8.000000  think : 0.000000
+name : CPU  device : 8  sched : 6
+name : SSD  device : 8  sched : 6
+nodename : CPU  workname : LookupJob  time : 0.005000
+nodename : CPU  workname : ScanJob  time : 0.400000
+nodename : CPU  workname : BulkInsertJob  time : 0.100000
+nodename : SSD  workname : LookupJob  time : 0.003000
+nodename : SSD  workname : ScanJob  time : 0.050000
+nodename : SSD  workname : BulkInsertJob  time : 0.010000

@@ -1,0 +1,72 @@
+
+
+Theory:
+
+Little's law:
+
+Bottlenecks cause traffic shaping.   When two queues operate in series, first queue shapes arrival rates on second
+
+Closed form results are difficult for network of queues.  Hence, the need for separability criteria or product-form.  Or resort to iterative methods
+
+Network is separable if it satisfies BCMP theorem.  MVA can be applied to such networks 
+
+In a closed circuit, state of each queue is interdependent on all other ueues.  Hence no closed form analytic solution.  Techniques for separable closed circuits developed using convolution method.
+
+Individual component times are random and can be drawn from an exponential distribution.  End-to-end-time is gamma distributed because it is cumulative of individual exp distributions.
+
+
+Reiser Lavenberg : MVT : Customer arriving at queue in Product form network sees same average number in queue as an outside observer will see if network had one customer less. - this is basis of MVA algo
+
+Due to feedback, service time becomes dilated but queue length is unaffected.
+Jackson theorem: After first queue, inter-interval times are correlated with packet lengths.  If this correlation is eliminated, then each queue can be assumed to be M/M/1 
+
+Kleinrock independence assumption : simplifies network of queues with unstable flow
+
+Burke theorem for M/M/1, M/M/m or M/M/inf : reversible
+
+Poisson arrivals see time averages
+Pollaczek-Khintchine for M/G/1
+
+Poisson with feedback is not Poisson
+
+
+Jackson theorem for single server and Poisson arrival:
+Jackson has extensions
+
+Plot graph of Y=Response Time, X = Throughput
+Power = Throughput/Response Time
+
+Chandy-Herzog-Woo theorem is equiv of Norton's theorem in electrical circuits.
+
+
+FESC - flow equiv service center - used for finite buffers
+
+Time/function = instructions/func * cycles/instr * time/cycle
+
+======
+
+For product form networks, solutions can be determined analytically
+
+For open, use forced flow
+For closed, use iterative algo
+
+For single class, MVA uses 3 equations
+* Little's law global
+* Little's law local
+* Service center residence time
+
+For multiple class,  same 3 equations as above
+
+Approx MVA Algos
+* Chow
+* Bard-Schweitzer
+* Linearizer
+* De Souza-Muntz linearizer
+* AQL (Aggregate Queue Length)
+
+Moment Analysis
+
+=======
+
+Questions:
+* can an open finite buffer queue be converted to closed ?

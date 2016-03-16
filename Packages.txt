@@ -1,0 +1,16 @@
+
+R - Pedro Canadilla : http://www.r-bloggers.com/tag/queueing-theory/
+
+Python - Simpy & SimComponents
+
+PDQ - Python and R
+	- cant solve multiclass with multi-server open
+
+https://www.grotto-networking.com/DiscreteEventPython.html
+
+Octave - Queueing - qnetworks
+
+javascript simulator - auckland (qsim.js)
+
+Monarc - distributed system simulator
+

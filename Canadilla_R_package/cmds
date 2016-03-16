@@ -1,0 +1,44 @@
+
+=====
+
+In R - Pedro Canadilla's package
+
+install.packages("queueing")
+library(queueing)
+x <- NewInput.MM1(lambda=0.25, mu1=, n=10)
+
+=========
+
+NewInput
+CheckInput
+
+=======
+
+L - mean number
+Lk
+Lck
+Lq
+Lqq
+
+===========
+
+Pn - probabilities
+===========
+
+RO - report server use
+===========
+
+SP saturation point
+==
+
+summary
+==========
+
+Throughput
+===========
+
+VN - variance of queue len
+===========
+
+W - response time 
+===========

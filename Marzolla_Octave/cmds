@@ -1,0 +1,33 @@
+
+
+In octave 
+>pkg load queueing
+
+naming convention for funcs:
+1) ctmc - continuous time markov chain
+1) dtmc -  
+1) qs - queuing system for individual nodes
+1) qn - queuing network
+
+help <func>
+demo <func>
+
+qnom - exact analysis for open multiclass BCMP net
+qnom(lambda, S matrix, V vector, m vector)
+
+qnomvisits
+
+qnmknode
+qnsolve - only product form for now
+	doesnt support multiple servers for multiclass open
+
+
+=========
+
+cpu_svc_time = column vec = service time per job class 
+cpu_node = qnmknode("M/M/m-fcfs", cpu_svc_time, num_cpu)
+
+io_svc_time = column vec = service time per job class
+io_node = qnmknode("M/M/m-fcfs", io_svc_time, num_ssd)
+
+

@@ -1,0 +1,27 @@
+
+Given 
+1) arrival rate per class
+2) service rate per resource per class (distribution, load-dependent)
+3) a network of queues 
+4) mean visits to each center k (+ routing matrix)
+
+compute 
+1) resource utilization
+2) throughput 
+3) queue length & response time
+
+model has to multiclass, open, multiserver 
+maybe load-dependent
+
+how to model rocksdb?
+
+solve 
+1) analytic : 
+2) simulation : is usually more detailed 
+
+Validate results with atleast 2 different tools
+
+Component analysis - how do changes in resource capacity affect throughput and change bottlenecks?
+
+Transient analysis
+

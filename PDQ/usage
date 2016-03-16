@@ -1,0 +1,88 @@
+
+R
+
+> install.packages("<download_path/pdq_6.2-0.tar.gz", repos=NULL, type="source")
+> library("pdq")
+> source("<script>", echo = TRUE)
+> q()
+
+==============
+
+Neil Gunther PDQ
+
+http://www.perfdynamics.com/Tools/PDQman.html
+
+install.packages("/home/sandeep/Downloads/pdq_6.2-0.tar.gz", repos=NULL, type="source")
+
+library(pdq)
+
+Node Type : CEN or DLY
+service discipline = FCFS, ISRV, LCFS, PSHR
+Workload = BATCH/TERM/TRANS
+Solution = CANON/EXACT/APPROX
+CANON only for open
+EXACT only for closed, uses iterative MVA
+APPROX only for closed, uses approx MVA
+
+SetDebug(TRUE)
+
+Init(modelName)
+
+CreateOpen("modelName", arrivRate) - to create stream
+CreateClosed(name, TERM/BATCH, num_users, thinkTime)
+
+CreateMultiNode(servers, name, CEN, FCFS) - multiserver queuing node
+CreateNode("server", device-type=CEN, queuing_type=FCFS) - to create node
+
+SetDemand("server", "modelName", serviceTime)
+SetVisits(nodename, workname, visits, stime)
+SetDebug(TRUE/FALSE)
+
+SetWUnit
+SetTUnit
+
+Solve(CANON/EXACT/APPROX)
+
+GetLoadOpt(TERM/BATCH, workname)
+GetQueueLength(device, workname, TRANS/TERM/BATCH)
+GetResidenceTime(device, workname, TRANS/TERM/BATCH)
+GetResponse(TRANS/TERM/BATCH, workname)
+GetThruMax(TERM/BATCH, workname)
+GetThruput(TRANS/TERM/BATCH, workname)
+GetUtilization(device, workname, TRANS/TERM/BATCH)
+
+Report
+
+ library(pdq)
+
+ # Model globals
+ arrivalRate <- 0.75
+ serviceRate <- 1.0
+
+ ## Build and solve the PDQ model
+
+ Init("M/M/1 queue")                # initialize PDQ
+
+ CreateOpen("Work", arrivalRate)    # open network
+
+ CreateNode("Server", CEN, FCFS)    # single server in FIFO order
+ CreateMultiNode(4, "Server", CEN, FCFS)
+
+ SetDemand("Server", "Work", 1/serviceRate)
+
+ pdq::Solve(CANON)    # Solve the model
+
+ pdq::Report() # generic format
+
+? pdq
+
+ls() - variables
+ls("package:pdq")
+
+?? pdq::Solve
+
+http://stackoverflow.com/questions/15289995/how-to-get-help-in-r
+
+https://cran.r-project.org/doc/contrib/Short-refcard.pdf
+
+
